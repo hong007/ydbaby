@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="style/css/main.css">
+
+    <link rel="stylesheet" type="text/css" href="style/plugin/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <!-- carousel style -->
+    <link rel="stylesheet" href="style/plugin/slider/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style/plugin/slider/nivo-slider.css" type="text/css" media="screen" />
+
+    <script type="text/javascript" src="style/js/jquery-1.11.1.min.js"></script>
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="style/plugin/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="style/plugin/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.fancybox').fancybox();
+            // $(".navmain li a").click(function () {
+            //     $(this).parent().addClass("navmainactive")
+            //     $(this).parent().siblings("li").removeClass("navmainactive");
+            //     // alert("123");
+            // });
+               $(".navmain li a").click(function () {
+                $(this).addClass("navmainactive")
+                $(this).parent().siblings("li").find("a").removeClass("navmainactive");
+                // alert("123");
+            });
+            $(".navmain li a").hover(function () {
+                $(this).click();
+            })
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="top">
+                <div class="toplogo">
+                    <img src="images/logo.png"></div>
+                <div class="topmenucont">
+                    <ul class="topmenu">
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href="product.html"></a>
+                        </li>
+                        <li class="changeli">
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="maincarousel">
+                    <div class="slider-wrapper theme-default">
+                        <div id="slider" class="nivoSlider">
+                            <img src="images/1_bearth.png" data-thumb="images/1_bearth.png" alt="" />
+                            <img src="images/2_b.png" data-thumb="images/2_b.png" alt="" />
+                            <img src="images/1_bearth.png" data-thumb="images/1_bearth.png" alt="" data-transition="slideInLeft" />
+                            <img src="images/3_b.png" data-thumb="images/3_b.png" alt="" title="#htmlcaption" />
+                        </div>
+                        <div id="htmlcaption" class="nivo-html-caption"> <strong>This</strong>
+                            is an example of a <em>HTML</em>
+                            caption with
+                            <a href="#">a link</a>
+                            .
+                        </div>
+                    </div>
+                    <div class="footer-banner" style="width:728px; margin:0 auto;display: none!important;"></div>
+                </div>
+                <div class="joinway">
+                    <img src="images/joinway.png"></div>
+                <div class="banner">
+                    <img src="images/banner.png"></div>
+            </div>
+            <div class="contmain">
+                <div class="contmanu">
+                    <ul class="navmain">
+                        <li class="li1">
+                            <a href="javascript:void(0);">
+                                <span></span>
+                            </a>
+                        </li>
+                        <li class="li2">
+                            <a href="javascript:void(0);">
+                                <span></span>
+                            </a>
+                        </li>
+                        <li class="li3">
+                            <a class="navmainactive" href="javascript:void(0);">
+                                <span></span>
+                            </a>
+                        </li>
+                        <li class="li4">
+                            <a href="javascript:void(0);">
+                                <span></span>
+                            </a>
+                        </li>
+                        <li class="li5">
+                            <a href="javascript:void(0);">
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navmsec">
+                        <li>
+                            <a href="">介绍1</a>
+                        </li>
+                        <li>
+                            <a href="">介绍2</a>
+                        </li>
+                        <li>
+                            <a href="">介绍3</a>
+                        </li>
+                        <li>
+                            <a href="">介绍4</a>
+                        </li>
+                        <li>
+                            <a href="">介绍5</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="notice lf">
+                    <h2 class="notice-title">
+                        <a href="">更多</a>
+                    </h2>
+                    <ul class="noticemenu">
+                        <li>
+                            <a href="">
+                                项目1
+                                <span class="datespan">2105.02.18</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                项目1
+                                <span class="datespan">2105.02.18</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                项目1
+                                <span class="datespan">2105.02.18</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                项目1
+                                <span class="datespan">2105.02.18</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contmain-rt">
+                    <div class="carousel lf">
+                        <p>
+
+                            <a class="fancybox" href="images/1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+                                <img src="images/1_s.jpg" alt="" />
+                            </a>
+
+                            <a class="fancybox test" href="images/2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp">
+                                <img src="images/2_s.jpg" alt="" />
+                            </a>
+
+                            <a class="fancybox test" href="images/3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon">
+                                <img src="images/3_s.jpg" alt="" />
+                            </a>
+
+                            <a class="fancybox test" href="images/4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno">
+                                <img src="images/4_s.jpg" alt="" />
+                            </a>
+                            <a class="fancybox" href="images/1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+                                <img src="images/playbtn.png" alt="" />
+                            </a>
+                        </p>
+                    </div>
+                    <div class="contvedio lf">
+                        <ul class="contvedio-nav">
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                        <img class="bannerimg" src="images/banner02.png"></div>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="style/plugin/slider/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#slider').nivoSlider({effect: 'slideInLeft',controlNav:false,directionNav:false});
+        });
+    </script>
+</body>
+</html>

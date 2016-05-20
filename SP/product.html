@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>子页</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style/css/main.css">
+	-->
+	<link rel="stylesheet" type="text/css" href="style/css/subpage.css">
+
+	<link rel="stylesheet" type="text/css" href="style/plugin/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<link rel="stylesheet" href="style/plugin/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css" />
+
+	<script type="text/javascript" src="style/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="style/plugin/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="style/plugin/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+	<script src="style/plugin/jquery.mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// 遮罩层轮播
+			$(".fancybox").fancybox();
+
+			// 滚动条初始化
+			$("#detailarea").mCustomScrollbar({
+				scrollInertia:100,
+				autoDraggerLength:false
+			});
+
+			$(".listmenu li a").click(function() {
+				$(this).parent().addClass("listmenuactive")
+				$(this).parent().siblings("li").removeClass("listmenuactive");
+				// alert("123");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="top">
+				<div class="toplogo">
+					<img src="images/logo.png"></div>
+				<div class="topmenucont">
+					<ul class="topmenu">
+						<li>
+							<a href="">首页</a>
+						</li>
+						<li>
+							<a href="">品牌故事</a>
+						</li>
+						<li>
+							<a href="">产品</a>
+						</li>
+						<li class="changeli">
+							<a href="">加盟方式</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="joinway">
+					<img src="images/joinway.png"></div>
+				<div class="banner">
+					<img src="images/banner.png"></div>
+			</div>
+			<div class="subpagecont contmain">
+				<div class="contleft"></div>
+				<div class="contmiddle">
+					<ul class="submenu">
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+					</ul>
+					<ul class="listmenu">
+						<li class="lmli1 listmenuactive">
+							<a href="javascript:void(0);"></a>
+						</li>
+						<li class="lmli2">
+							<a href="javascript:void(0);"></a>
+						</li>
+						<li class="lmli3">
+							<a href="javascript:void(0);"></a>
+						</li>
+						<li class="lmli4">
+							<a href="javascript:void(0);"></a>
+						</li>
+						<li class="lmli5">
+							<a href="javascript:void(0);"></a>
+						</li>
+						<li class="lmli6">
+							<a href="javascript:void(0);"></a>
+						</li>
+						<li class="lmli7">
+							<a href="javascript:void(0);"></a>
+						</li>
+					</ul>
+					<div class="picturearea" id="detailarea">
+						<!-- <div class="piccont">
+						<img src="images/5_b.jpg"></div>
+					<div class="piccont">
+						<img src="images/5_b.jpg"></div>
+					<div class="piccont">
+						<img src="images/5_b.jpg"></div>
+					<div class="piccont">
+						<img src="images/5_b.jpg"></div>
+					<div class="piccont">
+						<img src="images/5_b.jpg"></div>
+					<div class="piccont">
+						<img src="images/5_b.jpg"></div>
+					<div class="piccont">
+						<img src="images/5_b.jpg"></div>
+					<div class="piccont">
+						<img src="images/5_b.jpg"></div>
+					<div class="piccont">
+						<img src="images/5_b.jpg"></div>
+					-->
+						此处是文字展示
+				</div>
+				<div class="contmidbotm"></div>
+			</div>
+			<div class="contright">
+				<img src="images/animal01.png"></div>
+		</div>
+		<div class="footer"></div>
+	</div>
+</div>
+</body>
+</html>

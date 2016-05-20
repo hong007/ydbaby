@@ -1,0 +1,295 @@
+/*通用样式*/
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	-webkit-text-size-adjust: none;
+}
+html, body {
+	color: #000;
+	font-weight: normal;
+	font-family: "微软雅黑";
+	background: #fff;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+a:focus, a:active, a:hover, button:focus {
+	outline: none;
+}
+img {
+	border: none;
+}
+
+/*主样式*/
+.wrapper {
+	width: 1010px;
+	height: 715px;
+	font-size: 12px;	/*border: 1px solid red;*/
+	background: url(../../images/subbg.png) no-repeat center center;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.content {
+	width: 1010px;
+	/*height: 715px;*/
+}
+.top {
+	width: 1010px;
+	height: 335px;
+	position: relative;
+	padding-left: 67px;
+}
+.toplogo {
+	width: 371px;
+	height: 242px;
+	margin-top: 10px;	/*background: url(../../images/logo.png) no-repeat center center;*/
+}
+.topmenucont {
+	width: 650px;
+	height: 140px;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	background: url(../../images/topmenu.png) no-repeat center center;
+}
+.topmenu {
+	width: 485px;
+	height: 65px;
+	margin: 45px auto 0;
+	padding-left: 72px;
+}
+.topmenu li {
+	float: left;
+	margin-left: 33px;
+	margin-top: 15px;
+	cursor: pointer;	/*border:1px solid red;*/
+}
+.topmenu .changeli {
+	margin: -10px 0 0 20px;
+}
+.topmenu li a {
+	float: left;
+	width: auto;
+	min-width: 58px;
+	height: 45px;
+	line-height: 45px;
+	display: inline-block;
+	visibility: hidden;
+}
+.joinway {
+	position: absolute;
+	bottom: -96px;	/*left: 0px;*/
+	left: 68px;	/*background: url(../../images/joinway.png) no-repeat center center;*/
+}
+.joinway:hover{
+	animation: 0.2s linear 0s alternate none 2 running undulate;
+}
+@-webkit-keyframes undulate {
+	0%, 100%, 50% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0)
+	}
+	25% {
+		-webkit-transform: translate3d(1px, -1px, 0);
+		transform: translate3d(1px, -1px, 0)
+	}
+	75% {
+		-webkit-transform: translate3d(6px, 8px, 0);
+		transform: translate3d(6px, 8px, 0)
+	}
+}
+@keyframes undulate {
+	0%, 100%, 50% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0)
+	}
+	25% {
+		-webkit-transform: translate3d(1px, -1px, 0);
+		transform: translate3d(1px, -1px, 0)
+	}
+	75% {
+		-webkit-transform: translate3d(6px, 8px, 0);
+		transform: translate3d(6px, 8px, 0)
+	}
+}
+.banner {
+	position: absolute;
+	bottom: 47px;
+	right: 82px;
+	/*animation: 3s linear 0s reverse none infinite running rotating;*/
+	animation: 3s linear 0s reverse none infinite running rotating;
+	transform-origin: 0px 149px 0;
+}
+.banner:hover{
+	animation: none;
+}
+@-webkit-keyframes rotating {
+	0% {
+		-webkit-transform: rotate(0) rotateY(-20deg);
+		transform: rotate(0) rotateY(-20deg)
+	}
+	50% {
+		-webkit-transform: rotate(10deg) rotateY(-20deg);
+		transform: rotate(10deg) rotateY(-20deg)
+	}
+	100% {
+		-webkit-transform: rotate(0deg) rotateY(-20deg);
+		transform: rotate(0deg) rotateY(-20deg)
+	}
+}
+@keyframes rotating {
+	0% {
+		-webkit-transform: rotate(0) rotateY(-20deg);
+		transform: rotate(0) rotateY(-20deg)
+	}
+	50% {
+		-webkit-transform: rotate(10deg) rotateY(-20deg);
+		transform: rotate(10deg) rotateY(-20deg)
+	}
+	100% {
+		-webkit-transform: rotate(0deg) rotateY(-20deg);
+		transform: rotate(0deg) rotateY(-20deg)
+	}
+}
+.contmain {
+	width: 1010px;
+	height: 310px;
+	margin-top: 9px;
+}
+.lf {
+	float: left;
+}
+
+/*子页面样式*/
+.subpagecont {
+	position: relative;
+	width: 1027px;
+	background: url(../../images/visual02.png) no-repeat bottom right;
+}
+.contleft {
+	position: absolute;
+	top: 73px;
+	left: 115px;
+	width: 184px;
+	height: 210px;
+	z-index: 999;
+	background: url(../../images/product01.png) no-repeat center right;
+}
+.subpagecont .contmiddle {
+	width: 515px;
+	height: 475px;	/*border:1px solid green;*/
+	position: absolute;
+	top: -180px;
+	left: 253px;
+	background: url(../../images/subcontbg.png) no-repeat center right;
+}
+.subpagecont .contmidtop {
+	background: #fff;
+}
+.contmiddle .submenu {
+	position: absolute;
+	top: -3px;
+	left: 29px;
+	width: 600px;
+	background: url(../../images/submenubtn.png) no-repeat center left;
+}
+.contmiddle .submenu li {
+	float: left;
+}
+.contmiddle .submenu li a {
+	float: left;
+	width: 90px;
+	height: 20px;
+	display: inline-block;
+	/*background: url(../../images/otherbtn.png) no-repeat center right;*/
+}
+/*.contmiddle .submenu li a:hover{
+	background-color:#e7feff; 
+}*/
+.contmiddle  .listmenu {
+	width: 133px;	/*position: absolute;*/
+	/*top: 51px;
+	left: 50px;*/
+	margin: 51px 0 0 50px;
+	float: left;
+	background: url(../../images/productbg.png) no-repeat center left;
+}
+/*.contmiddle  .listmenu li{
+	background: url(../../images/productbg.png) no-repeat center left;
+}
+.contmiddle  .listmenu .lmli1{
+	background-position: 0 -20px;
+}*/
+.contmiddle  .listmenu li a {
+	width: 130px;
+	height: 34px;
+	display: inline-block;
+	opacity: 0.2;
+	/*background: url(../../images/listbg.png) no-repeat center right;*/
+	/*background: url(../../images/listbg.png) no-repeat center right;*/
+}
+.contmiddle  .listmenu .listmenuactive a{
+	/*background-color: #e7feff;*/
+	background-color: #fff;
+	opacity: 0.3;
+}
+.contmiddle  .listmenu li a:hover{
+	/*background-color: #ddd;*/
+	background-color: #fff;
+	opacity: 0.5;
+}
+
+/*图片展示区*/
+.picturearea {
+	height: 290px;
+	margin: 50px 0 0;
+	float: left;
+	width: 315px;
+	overflow: auto;
+}
+.picturearea .piccont {
+	/*图片放大时使用样式*/
+	/*margin: 4px -3px 4px 0;
+	width: 102px;
+	height: 85px;*/
+	margin: 4px 4px 0 0;
+	width: 92px;
+	height: 75px;
+	overflow: hidden;
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid #ddd;
+	/*transform: scale(0.9);*/
+	/*transition: 0.8s;*/
+}
+.picturearea .piccont img {
+	/*width: 90px;
+	height: 73px;*/
+	width: 80px;
+	height: 63px;
+}
+.picturearea .piccont:hover {
+	/*图片放大时使用样式*/
+	/*transform: scale(1.2);
+	border:none;
+	padding: 0;*/
+	border: 1px solid #c20000;
+}
+.contright {
+	position: absolute;
+	bottom: 24px;
+	left: 395px;
+}
+.footer {
+	width: 1010px;
+	height: 30px;
+	background: url(../../images/footer.png) no-repeat center center;
+}
